@@ -1,0 +1,31 @@
+<scroll-view scroll-y class="scrollPage">
+  <cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg">
+    <view slot="content">发现</view>
+  </cu-custom>
+  <view class="cu-card case {{isCard?'no-card':''}}">
+  <view class="cu-item shadow" bindtap="into">
+    <view class="image">
+      <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">教学</view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">拍张照片，训练一个属于你自己的人工智能</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+        <view class="content flex-sub">
+          <view class="text-grey">石璞东</view>
+          <view class="text-gray text-sm flex justify-between">
+            十天前
+            <view class="text-gray text-sm">
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+              <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</scroll-view>

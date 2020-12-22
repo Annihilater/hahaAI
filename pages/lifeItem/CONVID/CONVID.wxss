@@ -1,0 +1,19 @@
+#mychart-dom-multi-bar {
+  position: fixed;
+  top: 200rpx;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  height:1200rpx;
+  z-index: -999;
+}
+
+#mychart-multi-bar{
+  position: fixed;
+  z-index: -999;
+}
+
+.action{
+  font-size: 40rpx;
+  margin-top: 14rpx;
+}

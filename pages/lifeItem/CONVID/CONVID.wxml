@@ -1,0 +1,3 @@
+<cu-custom bgColor="bg-gradual-pink" isCustom="{{true}}"><view slot="content">致敬2020</view></cu-custom>
+<ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+
