@@ -1,20 +1,29 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/discovery/discovery",
-    "pages/mine/mine",
+    "pages/posenet/index",
+    "pages/coco-ssd/index",
+
     "pages/lifeItem/home/home",
-    "pages/lifeItem/CONVID/CONVID",
     "pages/lifeItem/weather/weather",
     "pages/lifeItem/express/express",
-    "pages/lifeItem/share/share"
+    "pages/lifeItem/share/share",
+
+    "pages/discovery/home/home",
+    "pages/discovery/WeXinOCR/WeXinOCR",
+    "pages/discovery/face2face/face2face",
+
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "hahaAI",
-    "navigationStyle": "custom",
-    "navigationBarTextStyle": "white"
+    "navigationBarTitleText": "TensorFlow",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "./components/cu-custom"
   },
   "tabBar": {
     "list": [
@@ -31,7 +40,7 @@
         "selectedIconPath": "/pages/tabbar/lifeService_selected.png"
       },
       {
-        "pagePath": "pages/discovery/discovery",
+        "pagePath": "pages/discovery/home/home",
         "text": "发现",
         "iconPath": "/pages/tabbar/discovery.png",
         "selectedIconPath": "/pages/tabbar/discovery_selected.png"
@@ -44,8 +53,19 @@
       }
     ]
   },
-  "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+  "plugins": {
+    "tfjsPlugin": {
+      "version": "0.1.0",
+      "provider": "wx6afed118d9e81df9"
+    },
+    "ocr-plugin": {
+      "version": "3.0.6",
+      "provider": "wx4418e3e031e551be"
+    },
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
   },
   "sitemapLocation": "sitemap.json"
 }

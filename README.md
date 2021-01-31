@@ -1,11 +1,27 @@
-# hahaAI
+# tensorflow-wxapp
 
-你好，我是石璞东，欢迎来到hahaAI🇨🇳
+[TensorFlow.js](https://tensorflow.google.cn/js/?hl=zh_cn)是一个 `JavaScript` 库，用于在浏览器和 `Node.js` 上训练和部署机器学习模型。
 
-在这里你将看到TensorFlow与微信小程序的完美结合，体验到人工智能在Web端精彩绝乱的展示，同时也欢迎你关注我haha系列的其他产品：
-  1. 个人网站（hahaWebsite.）：https://www.shipudong.com
-  2. 微信公众号（hahaCoder）
-  3. 微信小程序（hahaAI）
-  4. CSDN主页：https://blog.csdn.net/weixin_41767802?spm=1010.2135.3001.5343
-  
-我将在2021.10月份左右，将我的hahaAI案例全部上线，并完成相关文档，欢迎各位小伙伴想我提出问题、与我交流。
+同样的，现在也可以在微信小程序里使用 `TensorFlow` 团队提供的插件，运行一些开箱即用的预训练模型。
+
+现在项目中已经引入：[实时估计人体姿势(PoseNet)](https://github.com/tensorflow/tfjs-models/tree/master/posenet)和定位和[识别单个图像中的多个对象(Coco SSD)](https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd)两个模型。
+
+## 快速开始
+
+* 首先需要在小程序后台添加`TensorFlow.js`插件，[参考此文档。](https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx6afed118d9e81df9&token=378013697&lang=zh_CN)
+
+* 在项目根目录下安装项目需要用到的`npm`包，使用`yarn`或者`npm`都可。
+
+```bash
+yarn install
+```
+
+* 注意：安装好`npm`包后一定有在开发者工具里**构建`npm`**。可以参考微信官方文档，[在小程序中使用npm](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)。
+
+* 修改根目录下的`env.js.example`文件，把其中的模型地址替换成你的模型地址。
+
+## 线上版本
+
+微信搜索：**TensorFlow机器学习模型**。或者扫码：
+
+![TensorFlow机器学习模型](https://star-1257061493.cos.ap-beijing.myqcloud.com/tensorflow/qrcode.jpg)
